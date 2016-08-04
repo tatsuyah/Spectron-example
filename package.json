@@ -1,0 +1,19 @@
+{
+  "name": "SpectronExample",
+  "version": "0.1.0",
+  "description": "Spectron example",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-app": "electron-packager . SpectronExample --platform=win32 --arch=ia32 --version=1.2.4 --overwrite=true --asar=true --version-string.ProductName=\"Spectron Example\" --version-string.CompanyName=\"unknown\"",
+    "build-app-mac": "electron-packager . SpectronExample --platform=darwin --arch=x64 --version=1.2.4 --overwrite=true --asar=true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron-packager": "^7.0.3",
+    "mocha": "^2.5.3",
+    "spectron": "^3.2.6"
+  }
+}
